@@ -9,6 +9,7 @@ void main() {
       ),
       body: Text("Pratice Project Kod Hear"), //ใส่ช้อความให้กับส่วนเนื้อหา
     ), //Scaffold ช่วยจัดหน้า
+    theme: ThemeData(primarySwatch: Colors.green),
   );
   runApp(app);
 }
