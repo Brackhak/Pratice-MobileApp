@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
           ),
           body: Center(
             child: Text(
-                "Orachattttttttttttttttt"), //สร้างข้อีความให้ widget อยู่กลางจอ
+              "Orachattttttttttttttttt",
+              style: TextStyle(fontSize: 30, color: Colors.redAccent),
+            ), //สร้างข้อีความให้ widget อยู่กลางจอ
           )), //Scaffold ช่วยจัดหน้า
       theme: ThemeData(primarySwatch: Colors.green),
     );
