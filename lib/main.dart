@@ -19,11 +19,10 @@ class MyApp extends StatelessWidget {
             title: Text("Demo Project"), //ใส่ข้อความให้ส่วนหัวของแอพ
           ),
           body: Center(
-            child: Text(
-              "Orachattttttttttttttttt",
-              style: TextStyle(fontSize: 30, color: Colors.redAccent),
-            ), //สร้างข้อีความให้ widget อยู่กลางจอ
-          )), //Scaffold ช่วยจัดหน้า
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Text("Orachat"), Text("Run"), Text("Away")],
+          ))), //Scaffold ช่วยจัดหน้า
       theme: ThemeData(primarySwatch: Colors.green),
     );
   }
