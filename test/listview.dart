@@ -30,6 +30,8 @@
 
 // class _HomepageState extends State<Homepage> {
 //   int number = 0; //สร้าง state
+
+//   //แสดงผลข้อมูล
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
@@ -37,31 +39,23 @@
 //         title: Text("Demo Project"), //ใส่ข้อความให้ส่วนหัวของแอพ
 //       ),
 //       body: Center(
-//         child: Column(
-//           //สร้าง column ขึ้นมาเพื่อสามารถใส่ข้อความหรือรูปภาพไปได้หลายอัน
-//           mainAxisAlignment: MainAxisAlignment
-//               .center, //จัดให้ตัวส่วนของข้อความใน column อยู่ตรงกลาง
-//           children: [
-//             Text("กดปุ่มเพื่อเพิ่มจำนวนตัวเลข"),
-//             Text(
-//               number.toString(),
-//               style: TextStyle(fontSize: 60),
-//             )
-//           ],
+//         child: ListView(
+//           children: getData(15),
 //         ),
-//       ),
-//       //สร้างปุ่มลอยขึ้นมาเพื่อกดแล้วเพิ่มค่า number
-//       floatingActionButton: FloatingActionButton(
-//         onPressed: addNumber,
-//         child: Icon(Icons.add), //สร้าง Icon ให้กับตัวปุ่ม
 //       ),
 //     );
 //   }
 
-//   void addNumber() {
-//     setState(() {
-//       //ทำการ set state เมื่อกดปุ่มให้ number +1
-//       number++;
-//     });
+//   //เป็นการเขียนโปรแกรมเชิงวัตถุ
+//   //สร้าง Function ที่เป็น Widget แบบ List ขึ้นมาแล้วเตรียมข้อมูลไปแสดงผลใน ListView
+//   List<Widget> getData(int count) {
+//     List<Widget> data = [];
+//     for (var i = 0; i < count; i++) {
+//       data.add(Text(
+//         "ห้องที่ ${i + 1}",
+//         style: TextStyle(fontSize: 20),
+//       ));
+//     }
+//     return data;
 //   }
 // }
